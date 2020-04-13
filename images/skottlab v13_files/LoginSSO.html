@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0798)https://assignment.itslearning.com/view.aspx?Accessibility=False&allowedhtmlcodelevel=LessRestricted&ApiSessionId=w10qqlbh4yy5l1mp2mb4vnjy&ContextRole=Learner&countrycode=SE&CustomerId=2480&educationsegment=1&Encoding=utf8&FirstName=Johan&isextensionmanager=False&itslearningenvironmentid=0&itslearningversion=3.112.0.449&Language=sv-SE&LastName=Andersson&LearningObjectId=128044405&LearningObjectInstanceId=195523565&Locale=sv-SE&LocationId=22044&OlsonTimeZoneId=Europe%2fStockholm&openedforpreview=False&OpenedFromCourse=True&Permissions=Read%2c+Participate&personid=433971&ReadOnly=False&Role=Learner&synckey=200308058312&Use12HTimeFormat=False&UserId=56302339&UserName=johaande&WindowsTimeZoneId=W.+Europe+Standard+Time&Timestamp=2020-03-24T12:06:10&Signature=a4fe21550e345cfb52330f6c52a4cf0e#! -->
+<html lang="sv-SE" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referrer for IE/Edge -->
+    <meta name="referrer" content="origin"><title>
+	Inlämningsuppgift för deltagare
+</title><link href="./ccl.css" rel="stylesheet">
+<link href="./assignment.css" rel="stylesheet">
+<link href="./jquery-ui-1.11.4.custom.css" rel="stylesheet">
+<script src="./jquery-1.7.1.min.js.nedladdning"></script>
+<script src="./jquery-ui-1.11.4.custom.min.js.nedladdning"></script>
+<script src="./jquery.are-you-sure.js.nedladdning"></script>
+<script src="./knockout-3.5.0.js.nedladdning"></script>
+<script src="./knockout.bindings.child.js.nedladdning"></script>
+<script src="./fetch.min.js.nedladdning"></script>
+<script src="./promise.min.js.nedladdning"></script>
+<script src="./objectassign.min.js.nedladdning"></script>
+<script src="./customevent.min.js.nedladdning"></script>
+<script src="./commonControlLibrary.min.js.nedladdning"></script>
+<script src="./assignment.min.js.nedladdning"></script>
+<style type="text/css" id="vakata-stylesheet">#vakata-dragged { display:block; margin:0 0 0 0; padding:4px 4px 4px 24px; position:absolute; top:-2000px; line-height:16px; z-index:10000; } #vakata-contextmenu { display:block; visibility:hidden; left:0; top:-200px; position:absolute; margin:0; padding:0; min-width:180px; background:#ebebeb; border:1px solid silver; z-index:10000; } #vakata-contextmenu ul { min-width:180px; } #vakata-contextmenu ul, #vakata-contextmenu li { margin:0; padding:0; list-style-type:none; display:block; } #vakata-contextmenu li { line-height:20px; min-height:20px; position:relative; padding:0px; } #vakata-contextmenu li a { padding:1px 6px; line-height:17px; display:block; text-decoration:none; margin:1px 1px 0 1px; } #vakata-contextmenu li ins { float:left; width:16px; height:16px; text-decoration:none; margin-right:2px; } #vakata-contextmenu li a:hover, #vakata-contextmenu li.vakata-hover > a { background:gray; color:white; } #vakata-contextmenu li ul { display:none; position:absolute; top:-2px; left:100%; background:#ebebeb; border:1px solid gray; } #vakata-contextmenu .right { right:100%; left:auto; } #vakata-contextmenu .bottom { bottom:-1px; top:auto; } #vakata-contextmenu li.vakata-separator { min-height:0; height:1px; line-height:1px; font-size:1px; overflow:hidden; margin:0 2px; background:silver; /* border-top:1px solid #fefefe; */ padding:0; } </style><style type="text/css" id="jstree-stylesheet">.jstree ul, .jstree li { display:block; margin:0 0 0 0; padding:0 0 0 0; list-style-type:none; } .jstree li { display:block; min-height:18px; line-height:18px; white-space:nowrap; margin-left:18px; min-width:18px; } .jstree-rtl li { margin-left:0; margin-right:18px; } .jstree > ul > li { margin-left:0px; } .jstree-rtl > ul > li { margin-right:0px; } .jstree ins { display:inline-block; text-decoration:none; width:18px; height:18px; margin:0 0 0 0; padding:0; } .jstree a { display:inline-block; line-height:16px; height:16px; color:black; white-space:nowrap; text-decoration:none; padding:1px 2px; margin:0; } .jstree a:focus { outline: none; } .jstree a > ins { height:16px; width:16px; } .jstree a > .jstree-icon { margin-right:3px; } .jstree-rtl a > .jstree-icon { margin-left:3px; margin-right:0; } li.jstree-open > ul { display:block; } li.jstree-closed > ul { display:none; } #vakata-dragged ins { display:block; text-decoration:none; width:16px; height:16px; margin:0 0 0 0; padding:0; position:absolute; top:4px; left:4px;  -moz-border-radius:4px; border-radius:4px; -webkit-border-radius:4px; } #vakata-dragged .jstree-ok { background:green; } #vakata-dragged .jstree-invalid { background:red; } #jstree-marker { padding:0; margin:0; font-size:12px; overflow:hidden; height:12px; width:8px; position:absolute; top:-30px; z-index:10001; background-repeat:no-repeat; display:none; background-color:transparent; text-shadow:1px 1px 1px white; color:black; line-height:10px; } #jstree-marker-line { padding:0; margin:0; line-height:0%; font-size:1px; overflow:hidden; height:1px; width:100px; position:absolute; top:-30px; z-index:10000; background-repeat:no-repeat; display:none; background-color:#456c43;  cursor:pointer; border:1px solid #eeeeee; border-left:0; -moz-box-shadow: 0px 0px 2px #666; -webkit-box-shadow: 0px 0px 2px #666; box-shadow: 0px 0px 2px #666;  -moz-border-radius:1px; border-radius:1px; -webkit-border-radius:1px; }.jstree .jstree-real-checkbox { display:none; } .jstree-themeroller .ui-icon { overflow:visible; } .jstree-themeroller a { padding:0 2px; } .jstree-themeroller .jstree-no-icon { display:none; }.jstree .jstree-wholerow-real { position:relative; z-index:1; } .jstree .jstree-wholerow-real li { cursor:pointer; } .jstree .jstree-wholerow-real a { border-left-color:transparent !important; border-right-color:transparent !important; } .jstree .jstree-wholerow { position:relative; z-index:0; height:0; } .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li { width:100%; } .jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li, .jstree .jstree-wholerow a { margin:0 !important; padding:0 !important; } .jstree .jstree-wholerow, .jstree .jstree-wholerow ul, .jstree .jstree-wholerow li { background:transparent !important; }.jstree .jstree-wholerow ins, .jstree .jstree-wholerow span, .jstree .jstree-wholerow input { display:none !important; }.jstree .jstree-wholerow a, .jstree .jstree-wholerow a:hover { text-indent:-9999px !important; width:100%; padding:0 !important; border-right-width:0px !important; border-left-width:0px !important; } .jstree .jstree-wholerow-span { position:absolute; left:0; margin:0px; padding:0; height:18px; border-width:0; padding:0; z-index:0; }</style></head>
+<body id="ctl00_MasterBody" class="">
+<form name="aspnetForm" method="post" action="https://assignment.itslearning.com/StudentView.aspx?LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;MobileBrowser=NotDefined&amp;UserId=56302339" id="aspnetForm">
+<div>
+<input type="hidden" name="__ITSL_CSRF_TOKEN__" id="__ITSL_CSRF_TOKEN__" value="gRq/m9QB1gECAxtbA3/Imn8+ceRrS6ZF+CUZFKCF8HwR1WoOSC5F2f/mbsg4oMIqjccOJg0M0uqH/dwUDrZ5Bu2WiO8HeFHnY7pNYQA=">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUIMjAwMTU5MzAPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg9kFgICAQ8WAh4FY2xhc3NlFgRmD2QWCmYPFQM1Y2NsLXBhZ2VoZWFkZXIgaC1tcmwxNSBoLW1ydDUgY2NsLXBhZ2VoZWFkZXIgaC1oaWRkZW4UY2NsLXBhZ2VoZWFkZXItdGl0bGUhSW5sw6RtbmluZ3N1cHBnaWZ0IGbDtnIgZGVsdGFnYXJlZAIBDxYCHwEFDGgtcHJpbnQtb25seWQCAg8VAQ9hcy1wYWdlLWNvbnRlbnRkAgYPFQEAZAIHD2QWEgIBD2QWAmYPFgIeD2FyaWEtbGFiZWxsZWRieQVDY3RsMDBfQ29udGVudF9QcmV2aWV3RGlhbG9nX2N0bDAwIGN0bDAwX0NvbnRlbnRfUHJldmlld0RpYWxvZ19jdGwwMxYCZg9kFgICAQ9kFgJmD2QWAmYPFQEcRsO2cmhhbmRzZ3JhbnNrYSBiaWZvZ2FkIGZpbGQCAw8PFgYeCENzc0NsYXNzBRpoLWJveCBjY2wtZXh0LWl0ZW0gaC1tcmIxMB4EXyFTQgICHgdWaXNpYmxlaGQWAgIBD2QWBgIBDxYCHwVoFgZmDxUBAGQCAQ8WAh8FaGQCAg8PFgYfAwUHaC1tcnQxMB8EAgIfBWhkFgQCAQ8PFgQfAwUwY2NsLWJ1dHRvbiBjY2wtYnV0dG9uLW91dGxpbmUgY2NsLWJ1dHRvbi1wcmltYXJ5HwQCAmRkAgMPDxYEHwMFB2gtbXJ0MTAfBAICZGQCAw8WAh8FaBYIZg8PFgQfAwUHaC1wZGIxMB8EAgJkFgICAQ8WAh8FaBYEZg9kFgJmDxUBCEZlZWRiYWNrZAIBDxYCHwVoFgJmDxUBCEZlZWRiYWNrZAIBDxYCHwVoFgRmDxUBAGQCAQ8WAh8FaGQCAg8VAgtoLXVzZXJpbnB1dABkAgMPDxYGHwMFDmgtbXJ0NSBoLW1yYjIwHwQCAh8FaGQWAgIBD2QWAmYPFQEOQmlmb2dhZGUgZmlsZXJkAgUPFgIfBWgWBGYPFQEGaC1tcnQ1ZAICD2QWAmYPD2QWAh4Fc3R5bGUFDWRpc3BsYXk6bm9uZTtkAgUPFgIfBWgWAmYPDxYEHwMFB2gtcGRiMjAfBAICZGQCBw8PFgYfAwUHaC1tcnQxMB8EAgIfBWhkFgQCAQ8PFgQfAwUHaC1wZGIyMB8EAgJkZAIDDw8WBB8DBQdoLXBkYjIwHwQCAmRkAgkPFgIfBWgWAmYPDxYEHwMFB2gtbXJiMTAfBAICZGQCCw8PFgYfAwUaaC1ib3ggY2NsLWV4dC1pdGVtIGgtbXJiMTAfBAICHwVoZBYEZg8VAhdhcy1ncm91cC1tZW1iZXJzLWhlYWRlcg5HcnVwcG1lZGxlbW1hcmQCAQ8WCh4UZGF0YS1jb2xsYWJvcmF0aW9uSWRlHwEFEmFzLW9wZW4tZ3JvdXAtY2hhdB4IZGlzYWJsZWRkHgV0aXRsZWUfBWgWAmYPFQIPaWxpIGlsaS1jb21tZW50GMOWcHBuYSBncnVwcGtvbnZlcnNhdGlvbmQCDQ8PFgYfAwUaaC1ib3ggY2NsLWV4dC1pdGVtIGgtbXJiMTAfBAICHwVoZBYEZg8VBA9oLWRzcC1pYiBoLXBkcjUJRGl0dCBzdmFyGmFzLXN1Ym1pc3Npb24tc3RhdHVzLXRpdGxlEkludGUgaW5sJiMyMjg7bW5hZGQCAQ8PFgIfBWhkFghmDxUEDGgtY29sb3ItZ3JleQATaC11c2VyaW5wdXQgaC1tcnQxMABkAgEPFgIfBWhkAgMPDxYGHwMFEmgtbXJ0MTUgaC1uby1wcmludB8EAgIfBWhkFgQCAQ8PFggeC05hdmlnYXRlVXJsBXR+L0Fuc3dlci5hc3B4P0xlYXJuaW5nT2JqZWN0SWQ9MTI4MDQ0NDA1JkxlYXJuaW5nT2JqZWN0SW5zdGFuY2VJZD0xOTU1MjM1NjUmTW9iaWxlQnJvd3Nlcj1Ob3REZWZpbmVkJlVzZXJJZD01NjMwMjMzOR8DBTNjY2wtYnV0dG9uIGNjbC1idXR0b24tY29sb3ItZ3JlZW4gY2NsLWJ1dHRvbi1zdWJtaXQfBAICHwVoZBYCZg8VAQhSZWRpZ2VyYWQCAw8PFgYfAwUMaC1sZXNzLWZvY3VzHwQCAh8FaGQWAmYPFQEHVGEgYm9ydGQCBQ8PFgYfAwUSaC1tcnQxNSBoLW5vLXByaW50HwQCAh8FaGQWBAIBDw8WBh8DBTBjY2wtYnV0dG9uIGNjbC1idXR0b24tb3V0bGluZSBjY2wtYnV0dG9uLXByaW1hcnkfCmUfBAICZBYCZg8VAQbDlnBwbmFkAgMPDxYEHwMFM2NjbC1idXR0b24gY2NsLWJ1dHRvbi1jb2xvci1ncmVlbiBjY2wtYnV0dG9uLXN1Ym1pdB8EAgJkFgJmDxUBCUzDpG1uYSBpbmQCDw8PFgQfAwUaaC1ib3ggY2NsLWV4dC1pdGVtIGgtbXJiMTAfBAICZBYMZg9kFghmDxUCCGgtZHNwLWliEklubMOkbW5pbmdzdXBwZ2lmdGQCAQ8PFgQfAwUUaC1tcmwyMCBjY2wtaWNvbmxpbmsfBAICZBYEZg8PFgIeCEltYWdlVXJsBSIvQ29udGVudC9JbWFnZXMvZWxlbWVudF9maWxlMjQucG5nZGQCAQ8PFgQfAwUNYXMtZXh0cmEtaW5mbx8EAgJkFgJmDxUBCTIgZmlsKGVyKWQCAg8PFgYfAwUGaC1mbC1yHwQCAh8FaGRkAgQPZBYGAgEPD2QWAh8BBRNoLXVzZXJpbnB1dCBoLW1ydDEwFgJmDxUBLjxwPkzDpHMgaW5zdHJ1a3Rpb25lciBpIGdvb2dsZSBkb2t1bWVudGV0LjwvcD5kAgMPDxYEHwMFB2gtbXJ0MTAfBAICZGQCBQ8PFgYfAwUHaC1tcnQxMB8EAgIfBWhkFgQCAQ8PFgQfAwUwY2NsLWJ1dHRvbiBjY2wtYnV0dG9uLW91dGxpbmUgY2NsLWJ1dHRvbi1wcmltYXJ5HwQCAmRkAgMPDxYEHwMFB2gtbXJ0MTAfBAICZGQCAQ8VAQ1JbmzDpG1uYWQgZmlsZAICDxUBgwFEaW4gbMOkcmFyZSBoYXIgc2thcGF0IGVuIGZpbCBkw6RyIGR1IGthbiBza3JpdmEgZGl0dCBzdmFyLiDDlnBwbmEgZmlsZW4gZ2Vub20gYXR0IGtsaWNrYSBww6Uga25hcHBlbiBTdmFyYSBpIGlubMOkbW5pbmdzdXBwZ2lmdGVuLmQCBA8VAk1odHRwczovL3N0YXRpY3MuaXRzbGVhcm5pbmcuY29tL3YzLjExMi4wLjQ0OS9pbWFnZXMvbG9nby9Hb29nbGVfMjAxNV9sb2dvLnN2Z+gBRGluIGzDpHJhcmUgaGFyIHNrYXBhdCBldHQgR29vZ2xlLWRva3VtZW50IHNvbSBza2EgYW52w6RuZGFzIGbDtnIgYXR0IHN2YXJhIHDDpSBpbmzDpG1uaW5nc3VwcGdpZnRlbi4gSW5uYW4gZHUga2FuIHJlZGlnZXJhIGRva3VtZW50ZXQgbcOlc3RlIGR1IGtvcHBsYSBpaG9wIGl0c2xlYXJuaW5nIG1lZCBkaXR0IEdvb2dsZS1za29sa29udG8uIERldCBiZWjDtnZlciBkdSBiYXJhIGfDtnJhIGVuIGfDpW5nLmQCBQ8PFgQfAwU+Y2NsLWJ1dHRvbiBjY2wtYnV0dG9uLWNvbG9yLWdyZWVuIGNjbC1idXR0b24tc3VibWl0IGgtbm8tcHJpbnQfBAICZBYCZg8VARJLb3BwbGEgdGlsbCBHb29nbGVkAgYPDxYGHwMFB2gtbXJ0MjAfBAICHwVoZBYMZg8PFgYfAwURYXMtYmFubmVyLXdhcm5pbmcfBAICHwVoZBYCZg8VARpUaWRzZ3LDpG5zZW4gaGFyIHBhc3NlcmF0LmQCAQ8PFgYfAwUsaC1mbnQtbm9ybWFsIGFzLWJhbm5lci1pbmZvcm1hdGlvbiBhcy13aWRvbnQfBAICHwVoZBYCZg8VAXdUaWRzZ3LDpG5zZW4gaGFyIHBhc3NlcmF0LiBEdSBrYW4gZm9ydGZhcmFuZGUgbMOkbW5hIGluIGRpdHQgc3ZhciwgbWVuIGRldCBrb21tZXIgYXR0IG1hcmtlcmFzIHNvbSBmw7ZyIHNlbnQgaW5sw6RtbmF0LmQCAg8PFgYfAwUfYXMtYmFubmVyLWluZm9ybWF0aW9uIGFzLXdpZG9udB8EAgIfBWhkFgJmDxUCAABkAgMPDxYGHwMFH2FzLWJhbm5lci1pbmZvcm1hdGlvbiBhcy13aWRvbnQfBAICHwVoZBYCZg8VATREdSBza2EgdXR2w6RyZGVyYSBkaXR0IHN2YXIgbsOkciBkdSBoYXIgbMOkbW5hdCBpbi4gZAIEDxUDT2NjbC1idXR0b24gY2NsLWJ1dHRvbi1jb2xvci1ncmVlbiBjY2wtYnV0dG9uLXN1Ym1pdCBoLW5vLXByaW50IGFzLWFuc3dlci1idXR0b24AHFN2YXJhIHDDpSBpbmzDpG1uaW5nc3VwcGdpZnRkAgUPDxYGHwoFdH4vQW5zd2VyLmFzcHg/TGVhcm5pbmdPYmplY3RJZD0xMjgwNDQ0MDUmTGVhcm5pbmdPYmplY3RJbnN0YW5jZUlkPTE5NTUyMzU2NSZNb2JpbGVCcm93c2VyPU5vdERlZmluZWQmVXNlcklkPTU2MzAyMzM5HwMFT2NjbC1idXR0b24gY2NsLWJ1dHRvbi1jb2xvci1ncmVlbiBjY2wtYnV0dG9uLXN1Ym1pdCBoLW5vLXByaW50IGFzLWFuc3dlci1idXR0b24fBAICZBYCZg8VARxTdmFyYSBww6UgaW5sw6RtbmluZ3N1cHBnaWZ0ZAIRDw8WAh8FaGQWAmYPZBYCZg9kFgRmD2QWAmYPZBYCZg8VAT1WaWxsIGR1IGtvcHBsYSBkaXR0IEdvb2dsZS1rb250byB0aWxsIGRpdHQgaXRzbGVhcm5pbmcta29udG8/ZAIBD2QWAgIBDw8WBB4HTmV3VGV4dAUGQXZicnl0HwVnZGQCAQ9kFgZmDxUB+wV7ImRhdGEiOnsiYXNzaWdubWVudElkIjoxMjgwNDQ0MDUsImFzc2lnbm1lbnRJbnN0YW5jZUlkIjoxOTU1MjM1NjUsImlzQ29sbGFib3JhdGlvbnNVc2VkIjp0cnVlLCJpc1RlbXBsYXRlQW5zd2VyIjpmYWxzZSwiaW5Qcm9ncmVzc0NsYXNzIjpudWxsfSwidGVybXMiOnsiZGVsZXRlQW5zd2VyUXVlc3Rpb24iOiJWaWxsIGR1IHRhIGJvcnQgc3ZhcmV0PyIsImVycm9yT2NjdXJlZCI6bnVsbCwibm9JbnRlcm5ldENvbm5lY3Rpb24iOm51bGwsImRvY3VtZW50TG9hZGluZ1RpdGxlIjpudWxsfSwiY29udHJvbHMiOnsiZGVsZXRlQW5zd2VyQnV0dG9uIjoiY3RsMDBfQ29udGVudF9EZWxldGVBbnN3ZXJCdXR0b24iLCJjb21tZW50TW9kdWxlIjoiY3RsMDBfQ29udGVudF9Db21tZW50TW9kdWxlX0NvbW1lbnRNb2R1bGUiLCJhbnN3ZXJCdXR0b24iOm51bGwsImZlZWRiYWNrRm9yRXJyb3IiOm51bGx9LCJ1cmxzIjp7ImRlbGV0ZUFuc3dlclVybCI6Ii9hcGkvbG8vMTI4MDQ0NDA1LzE5NTUyMzU2NS9hbnN3ZXIvIiwiY3JlYXRlU3R1ZGVudFRlbXBsYXRlQ29udHJvbGxlciI6Ii9hcGkvbG8vMTI4MDQ0NDA1LzE5NTUyMzU2NS9jcmVhdGVTdHVkZW50VGVtcGxhdGUvIiwiYW5zd2VyVGVtcGxhdGVVcmwiOiJ+L1N0dWRlbnRWaWV3LmFzcHg/TGVhcm5pbmdPYmplY3RJZD0xMjgwNDQ0MDVcdTAwMjZMZWFybmluZ09iamVjdEluc3RhbmNlSWQ9MTk1NTIzNTY1XHUwMDI2TW9iaWxlQnJvd3Nlcj1Ob3REZWZpbmVkXHUwMDI2VXNlcklkPTU2MzAyMzM5In19ZAIBDxUBIiNjdGwwMF9Db250ZW50X09wZW5Hcm91cENoYXRCdXR0b25kAgIPFQJ3U3R1ZGVudFZpZXcuYXNweD9MZWFybmluZ09iamVjdElkPTEyODA0NDQwNSZMZWFybmluZ09iamVjdEluc3RhbmNlSWQ9MTk1NTIzNTY1Jk1vYmlsZUJyb3dzZXI9Tm90RGVmaW5lZCZVc2VySWQ9NTYzMDIzMzl4RG9jdW1lbnRWaWV3LmFzcHg/TGVhcm5pbmdPYmplY3RJZD0xMjgwNDQ0MDUmTGVhcm5pbmdPYmplY3RJbnN0YW5jZUlkPTE5NTUyMzU2NSZNb2JpbGVCcm93c2VyPU5vdERlZmluZWQmVXNlcklkPTU2MzAyMzM5ZGR++9D/WjQ8Kv4qaRD1wxLU8TlBCw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ECCAF300">
+</div>
+    <h1 class="ccl-pageheader h-mrl15 h-mrt5 ccl-pageheader h-hidden">
+        <span class="ccl-pageheader-title">Inlämningsuppgift för deltagare</span>
+    </h1>
+    <div id="ctl00_PrintHeader" class="h-print-only"></div>
+    <div class="as-page-content">
+        
+    <div id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_C" class="ccl-feedback ccl-feedback-warning h-clf " aria-live="polite">
+	<i id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_IC" class="ili ili-exclamation-circle"></i><div id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_MC" class="ccl-feedback-messagecontainer"><div id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_T" style="display:inline;" class="ccl-feedback-text">Detta är en gruppuppgift. Skapa först en grupp</div></div><button id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_CB" style="display:none;" class="ccl-feedback-closeimage" type="button" title="Stäng" aria-label="Stäng"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" role="presentation"><path d="M6.71 6L11.85.86c.2-.19.2-.51 0-.7-.19-.2-.51-.2-.7 0L6 5.29.87.15c-.2-.2-.52-.2-.71 0-.2.19-.2.51 0 .7l5.13 5.14-5.14 5.13c-.2.2-.2.52 0 .71.09.1.22.15.35.15.13 0 .26-.05.35-.15L6 6.7l5.15 5.15c.09.1.22.15.35.15.13 0 .26-.05.35-.15.2-.19.2-.51 0-.7L6.71 6z" fill="#757575" fill-rule="evenodd"></path></svg></button><div id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_SMLLC" class="ccl-feedback-showmorelesslinkcontainer"><button id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_SML" class="ccl-feedback-showmorelink" type="button" style="display:none;" aria-label="Visa mer">Visa mer</button><button id="ctl00_TopMessagePlaceHolder_SelectCollaborationMessage_SLL" class="ccl-feedback-showlesslink" type="button" style="display:none;" aria-label="Visa mindre">Visa mindre</button></div>
+</div>
+    <div id="ctl00_TopMessagePlaceHolder_FeedbackForError_C" class="ccl-feedback ccl-feedback-error h-clf " role="alert" style="display:none;">
+	<i id="ctl00_TopMessagePlaceHolder_FeedbackForError_IC" class="ili ili-exclamation-circle"></i><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_MC" class="ccl-feedback-messagecontainer"><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_T" style="display:inline;" class="ccl-feedback-text">Okänt internt serverfel.</div></div><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_CB" style="display:none;" class="ccl-feedback-closeimage" type="button" title="Stäng" aria-label="Stäng"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" role="presentation"><path d="M6.71 6L11.85.86c.2-.19.2-.51 0-.7-.19-.2-.51-.2-.7 0L6 5.29.87.15c-.2-.2-.52-.2-.71 0-.2.19-.2.51 0 .7l5.13 5.14-5.14 5.13c-.2.2-.2.52 0 .71.09.1.22.15.35.15.13 0 .26-.05.35-.15L6 6.7l5.15 5.15c.09.1.22.15.35.15.13 0 .26-.05.35-.15.2-.19.2-.51 0-.7L6.71 6z" fill="#757575" fill-rule="evenodd"></path></svg></button><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_SMLLC" class="ccl-feedback-showmorelesslinkcontainer"><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_SML" class="ccl-feedback-showmorelink" type="button" style="display:none;" aria-label="Visa mer">Visa mer</button><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_SLL" class="ccl-feedback-showlesslink" type="button" style="display:none;" aria-label="Visa mindre">Visa mindre</button></div>
+</div>
+    
+
+        
+        <div class="">
+            
+    <section id="ctl00_Content_PreviewDialog" tabindex="-1" role="dialog" aria-modal="true" class="ccl-cssmodal ccl-cssmodal-visualstyle-benevolent" style="z-index:1;" aria-labelledby="ctl00_Content_PreviewDialog_ctl00 ctl00_Content_PreviewDialog_ctl03"><div id="ctl00_Content_PreviewDialog_ctl00" class="ccl-cssmodal-modal-inner">
+	<section class="ccl-cssmodal-mobile-toolbar"><div id="ctl00_Content_PreviewDialog_ctl02_C" class="ccl-gridtoolbar"><ul class="itemsleft"><li><button type="button" class="ccl-cssmodal-modal-close ccl-cssmodal-modal-close-mobile"><span>Stäng</span></button></li></ul></div></section><header id="ctl00_Content_PreviewDialog_ctl03" class="ccl-cssmodal-modal-header">
+            <h2>Skottpendel.mp4</h2>
+        </header><div id="ctl00_Content_PreviewDialog_ctl05" class="ccl-cssmodal-modal-content" style="width: 400px; min-width: 400px; min-height: 300px; max-width: 400px; max-height: 419px;"></div><button type="button" class="ccl-cssmodal-modal-close"><svg viewBox="0 0 18 18" role="presentation"><path xmlns="http://www.w3.org/2000/svg" d="M1.684.002c-.428 0-.856.162-1.18.484a1.674 1.674 0 0 0-.002 2.358L6.641 8.99.488 15.125a1.674 1.674 0 0 0-.002 2.357 1.667 1.667 0 0 0 2.358.002l6.154-6.134 6.154 6.162a1.668 1.668 0 0 0 2.358.002c.648-.646.65-1.71.004-2.358l-6.155-6.16 6.153-6.135c.648-.646.648-1.71.002-2.357A1.675 1.675 0 0 0 15.156.5L9.002 6.637 2.862.488A1.662 1.662 0 0 0 1.683.002z"></path></svg><span class="ccl-cssmodal-modal-close-screenreader">Stäng</span></button>
+</div></section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div data-onboarding-step="get-started"></div>
+    <div class="h-box ccl-ext-item h-mrb10" data-onboarding-step="edit-assignment">
+	
+        
+            <div>
+                <h2 class="h-dsp-ib">Inlämningsuppgift</h2>
+                <span class="h-mrl20 ccl-iconlink"><img src="./element_file24.png" alt="" style="height:24px;width:24px;border-width:0px;"><span class="as-extra-info">2 fil(er)</span></span>
+            </div>
+            <div id="ctl00_Content_IntroductionSectionContent">
+		
+                <div class="h-userinput h-mrt10">
+			
+                    <p>Läs instruktioner i google dokumentet.</p>
+                
+		</div>
+                <div class="h-mrt10">
+			
+                    
+<div id="aa3fc1554d3f24be3a06070f5fe19016b"><file-list params="settings: {&quot;EnableContextMenu&quot;:true,&quot;IsEnabledMakeACopyForEachStudent&quot;:false,&quot;NoInteraction&quot;:false,&quot;ShowTemplateOptions&quot;:false,&quot;DisableDownload&quot;:false,&quot;DisableEdit&quot;:true,&quot;DisableView&quot;:false,&quot;DisableRemove&quot;:true,&quot;DisableRename&quot;:true,&quot;DisableFileListControlItemClick&quot;:false,&quot;ShowGoogleLinks&quot;:true,&quot;ShowOneDriveLinks&quot;:false,&quot;DownloadEndpointUrl&quot;:&quot;/Proxy/DownloadRedirect.ashx?fileRepoId={fileRepoId}&amp;AnswerId=0&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;ViewEditEndpointUrl&quot;:&quot;/mvc/Attachment/Get?FileId={fileRepoId}&amp;UniqueFileId={uniqueId}&amp;ViewOnly={viewOnly}&amp;AnswerId=0&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;MimeTypesToEdit&quot;:[&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.file&quot;,&quot;application/vnd.google-apps.photo&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.unknown&quot;],&quot;MimeTypesToView&quot;:[&quot;image/gif&quot;,&quot;image/jpeg&quot;,&quot;image/pjpeg&quot;,&quot;image/png&quot;,&quot;image/x-png&quot;,&quot;image/bmp&quot;,&quot;application/x-shockwave-flash&quot;,&quot;audio/mp3&quot;,&quot;audio/mp4&quot;,&quot;audio/mpeg&quot;,&quot;audio/ogg&quot;,&quot;audio/vnd.wave&quot;,&quot;audio/webm&quot;,&quot;audio/x-m4a&quot;,&quot;audio/wav&quot;,&quot;video/mp4&quot;,&quot;video/ogg&quot;,&quot;video/quicktime&quot;,&quot;video/webm&quot;,&quot;video/x-flv&quot;,&quot;video/x-m4v&quot;,&quot;video/x-ms-wmv&quot;,&quot;application/pdf&quot;,&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.file&quot;,&quot;application/vnd.google-apps.photo&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.unknown&quot;,&quot;application/rtf&quot;,&quot;text/plain&quot;,&quot;text/html&quot;,&quot;text/richtext&quot;],&quot;TemplateTokens&quot;:{&quot;FileName&quot;:&quot;{fileName}&quot;,&quot;ViewOnly&quot;:&quot;{viewOnly}&quot;,&quot;FileRepoId&quot;:&quot;{fileRepoId}&quot;,&quot;UniqueId&quot;:&quot;{uniqueId}&quot;,&quot;CustomId&quot;:&quot;{customId}&quot;},&quot;ShouldApplyKnockoutBindings&quot;:true,&quot;ContainerClientId&quot;:&quot;aa3fc1554d3f24be3a06070f5fe19016b&quot;,&quot;HtmlTagName&quot;:&quot;file-list&quot;,&quot;Translations&quot;:{&quot;Edit&quot;:&quot;Redigera&quot;,&quot;View&quot;:&quot;Visa&quot;,&quot;ViewOriginal&quot;:&quot;Visa senast inlämnad version&quot;,&quot;Rename&quot;:&quot;Byt namn&quot;,&quot;Download&quot;:&quot;Hämta&quot;,&quot;Delete&quot;:&quot;Ta bort&quot;,&quot;WriteANewFileName&quot;:&quot;Ange ett nytt filnamn&quot;,&quot;FileListOptions&quot;:&quot;Filalternativ&quot;,&quot;PreviewLoadingText&quot;:&quot;Läser in...&quot;,&quot;PreviewCloseButtonText&quot;:&quot;Stäng&quot;,&quot;TemplateOptionsMakeACopyForEachStudent&quot;:&quot;Gör en kopia till varje deltagare&quot;,&quot;TemplateOptionsStudentsCanView&quot;:&quot;Deltagare kan se&quot;},&quot;Triggers&quot;:{&quot;FileItemSelected&quot;:&quot;fileitem:selected&quot;,&quot;FileItemViewActivated&quot;:&quot;fileitem:view:activated&quot;,&quot;FileItemViewOriginalActivated&quot;:&quot;fileitem:vieworiginal:activated&quot;,&quot;FileItemEditActivated&quot;:&quot;fileitem:edit:activated&quot;,&quot;FileItemDownloadActivated&quot;:&quot;fileitem:download:activated&quot;},&quot;AdditionalMimeTypesOpenedInPopup&quot;:[&quot;application/pdf&quot;],&quot;EmbedVideoMimeTypes&quot;:[&quot;video/quicktime&quot;,&quot;video/x-ms-wmv&quot;,&quot;video/x-flv&quot;,&quot;application/x-shockwave-flash&quot;,&quot;video/mp4&quot;,&quot;video/x-m4v&quot;,&quot;video/ogg&quot;,&quot;video/webm&quot;],&quot;OwasMimeTypes&quot;:[],&quot;GoogleMimeTypes&quot;:[&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.file&quot;,&quot;application/vnd.google-apps.photo&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.unknown&quot;],&quot;DisableTemplateOptions&quot;:false,&quot;DisableOriginal&quot;:false,&quot;MimeTypesToEditFromGoogleDrive&quot;:[&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;],&quot;MimeTypesToTemplateFromUpload&quot;:[],&quot;PreviewDialogInstanceName&quot;:&quot;ctl00_Content_PreviewDialog&quot;,&quot;ShouldTriggerItemSelected&quot;:false,&quot;ShouldTriggerItemViewActivated&quot;:false,&quot;ShouldTriggerItemEditActivated&quot;:false,&quot;ShouldTriggerItemDownloadActivated&quot;:false}, files: [{&quot;Name&quot;:&quot;Skottpendel.mp4&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:false,&quot;Metadata&quot;:{&quot;PlagiarismReportUrl&quot;:null,&quot;id&quot;:&quot;83087863-1450-42cc-bbb3-5f842c11f7a4&quot;,&quot;name&quot;:&quot;Skottpendel.mp4&quot;,&quot;sourceType&quot;:4,&quot;mimeType&quot;:&quot;video/mp4&quot;,&quot;OriginalFileId&quot;:null,&quot;signedFileRepoId&quot;:&quot;Y3gIg1AUzEK7s1+ELBH3pA7GHZRlKAYvK/XHEtLJ+1je2WSR7iRn/Cj7FjAk2A52&quot;,&quot;signature&quot;:null,&quot;isTemplate&quot;:false},&quot;PreviewSettings&quot;:{&quot;Type&quot;:3,&quot;Url&quot;:&quot;/mvc/Attachment/Get?FileId=Y3gIg1AUzEK7s1%2bELBH3pA7GHZRlKAYvK%2fXHEtLJ%2b1je2WSR7iRn%2fCj7FjAk2A52&amp;UniqueFileId=83087863-1450-42cc-bbb3-5f842c11f7a4&amp;ViewOnly=True&amp;AnswerId=0&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;DialogWidth&quot;:400,&quot;DialogHeight&quot;:300,&quot;DialogMaximised&quot;:false},&quot;RightSideCustomHtml&quot;:null,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:&quot;&quot;,&quot;SnapshotFileId&quot;:null},{&quot;Name&quot;:&quot;Ballistisk pendel&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:false,&quot;Metadata&quot;:{&quot;id&quot;:&quot;5072f83d21fc46f58b464946a40df027&quot;,&quot;name&quot;:&quot;Ballistisk pendel&quot;,&quot;sourceType&quot;:2,&quot;mimeType&quot;:&quot;application/vnd.google-apps.document&quot;,&quot;viewUrl&quot;:&quot;/proxy/CasperFilehandler.aspx?FileId=2003817&amp;FileUserAction=View&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;MobileBrowser=NotDefined&amp;UserId=56302339&quot;,&quot;downloadUrl&quot;:&quot;/proxy/CasperFilehandler.aspx?FileId=2003817&amp;FileUserAction=Download&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;MobileBrowser=NotDefined&amp;UserId=56302339&quot;,&quot;isTemplate&quot;:false,&quot;isRegisteredWithCasper&quot;:true,&quot;isSupportedByCasper&quot;:false,&quot;PlagiarismReportUrl&quot;:null},&quot;PreviewSettings&quot;:{&quot;Type&quot;:1,&quot;Url&quot;:&quot;/proxy/CasperFilehandler.aspx?FileId=2003817&amp;FileUserAction=View&amp;LearningObjectId=128044405&amp;LearningObjectInstanceId=195523565&amp;MobileBrowser=NotDefined&amp;UserId=56302339&quot;,&quot;DialogWidth&quot;:0,&quot;DialogHeight&quot;:0,&quot;DialogMaximised&quot;:false},&quot;RightSideCustomHtml&quot;:null,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:null,&quot;SnapshotFileId&quot;:null}], api: api">
+                <div data-bind="foreach: { data: files, as: &#39;file&#39; }, visible: isVisible">
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-video-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-0">Ange ett nytt filnamn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-0" placeholder="Ange ett nytt filnamn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">Skottpendel</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded">.mp4</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Filalternativ">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Visa</button>
+                    
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hämta</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Ta bort"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml" style="display: none;"></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-generic-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-1">Ange ett nytt filnamn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-1" placeholder="Ange ett nytt filnamn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">Ballistisk pendel</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded" style="display: none;">.null</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Filalternativ">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Visa</button>
+                    
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hämta</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Ta bort"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml" style="display: none;"></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                </div></file-list></div>
+			<script>
+				
+(function() {
+    if (/complete|interactive|loaded/.test(document.readyState)) {
+        init();
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            init();
+        });
+    }
+           
+    function init() {
+        var fileListControl = new CCL.FileList.FileListControl({"EnableContextMenu":true,"NoInteraction":false,"IsEnabledMakeACopyForEachStudent":false,"ShowTemplateOptions":false,"DisableTemplateOptions":false,"DisableEdit":true,"DisableView":false,"DisableDownload":false,"DisableRename":true,"DisableRemove":true,"DisableFileListControlItemClick":false,"DisableOriginal":false,"ShowGoogleLinks":true,"ShowOneDriveLinks":false,"MimeTypesToView":["image/gif","image/jpeg","image/pjpeg","image/png","image/x-png","image/bmp","application/x-shockwave-flash","audio/mp3","audio/mp4","audio/mpeg","audio/ogg","audio/vnd.wave","audio/webm","audio/x-m4a","audio/wav","video/mp4","video/ogg","video/quicktime","video/webm","video/x-flv","video/x-m4v","video/x-ms-wmv","application/pdf","application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.file","application/vnd.google-apps.photo","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.unknown","application/rtf","text/plain","text/html","text/richtext"],"MimeTypesToEdit":["application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.file","application/vnd.google-apps.photo","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.unknown"],"MimeTypesToEditFromGoogleDrive":["application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet"],"MimeTypesToTemplateFromUpload":[],"OwasMimeTypes":[],"AdditionalMimeTypesOpenedInPopup":["application/pdf"],"EmbedVideoMimeTypes":["video/quicktime","video/x-ms-wmv","video/x-flv","application/x-shockwave-flash","video/mp4","video/x-m4v","video/ogg","video/webm"],"GoogleMimeTypes":["application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.file","application/vnd.google-apps.photo","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.unknown"],"DownloadEndpointUrl":"/Proxy/DownloadRedirect.ashx?fileRepoId={fileRepoId}&AnswerId=0&LearningObjectId=128044405&LearningObjectInstanceId=195523565&PeerAssessmentId=0&Type=1","ViewEditEndpointUrl":"/mvc/Attachment/Get?FileId={fileRepoId}&UniqueFileId={uniqueId}&ViewOnly={viewOnly}&AnswerId=0&LearningObjectId=128044405&LearningObjectInstanceId=195523565&PeerAssessmentId=0&Type=1","TemplateTokens":{"FileName":"{fileName}","ViewOnly":"{viewOnly}","FileRepoId":"{fileRepoId}","UniqueId":"{uniqueId}","CustomId":"{customId}"},"Translations":{"Edit":"Redigera","View":"Visa","ViewOriginal":"Visa senast inlämnad version","Rename":"Byt namn","Download":"Hämta","Delete":"Ta bort","WriteANewFileName":"Ange ett nytt filnamn","FileListOptions":"Filalternativ","PreviewLoadingText":"Läser in...","PreviewCloseButtonText":"Stäng","TemplateOptionsMakeACopyForEachStudent":"Gör en kopia till varje deltagare","TemplateOptionsStudentsCanView":"Deltagare kan se"},"Triggers":{"FileItemSelected":"fileitem:selected","FileItemViewActivated":"fileitem:view:activated","FileItemViewOriginalActivated":"fileitem:vieworiginal:activated","FileItemEditActivated":"fileitem:edit:activated","FileItemDownloadActivated":"fileitem:download:activated"},"ShouldApplyKnockoutBindings":true,"ContainerClientId":"aa3fc1554d3f24be3a06070f5fe19016b","PreviewDialogInstanceName":"ctl00_Content_PreviewDialog","ShouldTriggerItemSelected":false,"ShouldTriggerItemViewActivated":false,"ShouldTriggerItemEditActivated":false,"ShouldTriggerItemDownloadActivated":false});
+        fileListControl.initialize([{"Name":"Skottpendel.mp4","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":false,"Metadata":{"PlagiarismReportUrl":null,"id":"83087863-1450-42cc-bbb3-5f842c11f7a4","name":"Skottpendel.mp4","sourceType":4,"mimeType":"video/mp4","OriginalFileId":null,"signedFileRepoId":"Y3gIg1AUzEK7s1+ELBH3pA7GHZRlKAYvK/XHEtLJ+1je2WSR7iRn/Cj7FjAk2A52","signature":null,"isTemplate":false},"PreviewSettings":{"Type":3,"Url":"/mvc/Attachment/Get?FileId=Y3gIg1AUzEK7s1%2bELBH3pA7GHZRlKAYvK%2fXHEtLJ%2b1je2WSR7iRn%2fCj7FjAk2A52&UniqueFileId=83087863-1450-42cc-bbb3-5f842c11f7a4&ViewOnly=True&AnswerId=0&LearningObjectId=128044405&LearningObjectInstanceId=195523565&PeerAssessmentId=0&Type=1","DialogWidth":400,"DialogHeight":300,"DialogMaximised":false},"RightSideCustomHtml":null,"CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":"","SnapshotFileId":null},{"Name":"Ballistisk pendel","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":false,"Metadata":{"id":"5072f83d21fc46f58b464946a40df027","name":"Ballistisk pendel","sourceType":2,"mimeType":"application/vnd.google-apps.document","viewUrl":"/proxy/CasperFilehandler.aspx?FileId=2003817&FileUserAction=View&LearningObjectId=128044405&LearningObjectInstanceId=195523565&MobileBrowser=NotDefined&UserId=56302339","downloadUrl":"/proxy/CasperFilehandler.aspx?FileId=2003817&FileUserAction=Download&LearningObjectId=128044405&LearningObjectInstanceId=195523565&MobileBrowser=NotDefined&UserId=56302339","isTemplate":false,"isRegisteredWithCasper":true,"isSupportedByCasper":false,"PlagiarismReportUrl":null},"PreviewSettings":{"Type":1,"Url":"/proxy/CasperFilehandler.aspx?FileId=2003817&FileUserAction=View&LearningObjectId=128044405&LearningObjectInstanceId=195523565&MobileBrowser=NotDefined&UserId=56302339","DialogWidth":0,"DialogHeight":0,"DialogMaximised":false},"RightSideCustomHtml":null,"CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":null,"SnapshotFileId":null}]);
+    }
+})();
+
+			</script>
+
+                
+		</div>
+                
+                
+            
+	</div>
+
+        
+    
+</div>
+    
+
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(function() { IframeClickEventHelper.registerDocumentClickBubblingOnTop(); });
+document.addEventListener('DOMContentLoaded',
+    function() {
+        CommonFunctions.handleNavigationToAnchorsInUserInputInsideIframesResizedByTheirParents('.h-userinput');
+    }
+);$(function () { CCL.IframeContentHeightReporter.setUpIframeContentHeightReporter(); });(function () { new CCL.ConfirmDialog({"ConfirmDialogId":"ctl00_Content_ConnectConfirmDialogWarning","ConfirmButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl05","CancelButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl06","AlternativeButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl07"}); })();attachOnReadySendTitleToParent();$(function() { CssModal.commonSettings = {"cssClasses":{"isActive":"is-active","content":"ccl-cssmodal-modal-content","iframe":"ccl-cssmodal-modal-iframe","inner":"ccl-cssmodal-modal-inner","overlay":"ccl-cssmodal-has-overlay","overlayIos":"ccl-cssmodal-has-overlay-ios","close":"ccl-cssmodal-modal-close","header":"ccl-cssmodal-modal-header","footer":"ccl-cssmodal-modal-footer","webkitOverflow":"ccl-modal-webkit-overflow"},"events":{"show":"cssmodal:show","hide":"cssmodal:hide"}}; CssModal.modes = {"statically":0,"iframeStatically":1,"iframeDynamically":2,"ajaxStatically":3,"ajaxDynamically":4} });
+(function(){
+var m = new CssModal('ctl00_Content_PreviewDialog');
+$(function() {
+var m_settings = {"isIos":false,"expandToAllWindowSize":true,"resizeTimeoutInMilliseconds":10,"headerCssClass":"ccl-cssmodal-modal-header","ajaxUrl":"","forceContentHeight":false,"iframeUrl":"javascript:false;","IframeAllowMedia":false,"IframeClientId":"ctl00_Content_PreviewDialog_iframe","loadingText":null,"useAdaptiveWidth":true,"preferredWidth":600,"preferredHeight":0,"minContentWidth":0,"minContentHeight":0,"closeButtonClass":"ccl-cssmodal-modal-close","mobileExpandedNestedContentClass":"ccl-cssmodal-mobile-expanded-nested-content","mode":4,"userInputControlsSelector":null,"iframeTitle":"","isNestedDialog":false,"addMaskToTopMenu":false,"PreventScrollingBeforeCloseDialog":false,"visualStyleBenevolent":true,"usesCrossDomainIframe":false};
+var m_customScripts =
+{
+    afterOpenDialog: undefined,
+    beforeOpenDialog: undefined,
+    beforeCloseDialog: undefined,
+    afterCloseDialog: undefined
+};
+var m_controls =
+{
+container: $('#ctl00_Content_PreviewDialog'),
+contentContainer: $('#ctl00_Content_PreviewDialog_ctl05'),
+feedbackContainer: $('#undefined'),
+headerContainer: $('#ctl00_Content_PreviewDialog_ctl03'),
+subheaderContainer: $('#undefined'),
+innerContainer: $('#ctl00_Content_PreviewDialog_ctl00'),
+footerContainer: $('#undefined')
+};
+m.initialize(m_controls, m_customScripts, m_settings);
+
+});
+})();
+
+$(function() { var k = new CCL.KeepAlive({"webMethodUrl":"/api/keepalive/v1","intervalInSeconds":1800,"errorTimeoutInSeconds":60,"maxNumberOfTries":1000,"postData":"{\"assignmentId\":128044405}","headerName":null,"headerValue":null}); });
+//]]>
+</script>
+</form>
+
+    
+    <script>
+        var connectConfirmDialogWarning;
+
+        $(function () {
+            connectConfirmDialogWarning = window["ctl00_Content_ConnectConfirmDialogWarning"];
+
+            new CCL.ButtonLoadingIndicator($("#answerButton"), "ccl-button-in-progress");
+        });
+
+        function openConnectConfirmDialogWarning(type) {
+            var messages = {
+                'GoogleDrive': {
+                    header: "Vill du koppla ditt Google-konto till ditt itslearning-konto?",
+                    content: "<strong>Om du kopplar ihop dina Google- och itslearning-konton behöver du inte logga in varje gång du lägger till filer från Google Drive.</strong>"
+                }
+            }
+
+            connectConfirmDialogWarning
+                .showMessage(messages[type].header, messages[type].content)
+                .then(function (dialogResult) { handleConnectDialogResult(dialogResult, type) });
+        }
+
+        function handleConnectDialogResult(dialogResult, accountType) {
+            switch (dialogResult) {
+                case CCL.ConfirmDialogResult.Confirm:
+                    {
+                        var onMessageFromPopupReceived = function () {
+                            window.location.reload();
+                        }
+
+                        var settings = {
+                            popupDomain: 'https://platform.itslearning.com',
+                            crossCommunicationProxyUrl: 'https://platform.itslearning.com/CrossCommunicationProxy.html',
+                        };
+                        switch (accountType) {
+                            case 'GoogleDrive':
+                                settings.popupUrl = 'https://platform.itslearning.com/GoogleOAuth.aspx';
+                                break;
+                            default:
+                        }
+                        var popup = new Popup(settings, new BrowserSniffer());
+                        popup.subscribe(new PopupCallback(onMessageFromPopupReceived));
+                        popup.open();
+                    }
+                    break;
+            }
+        }
+
+        $(function () {
+            var settings = {"data":{"assignmentId":128044405,"assignmentInstanceId":195523565,"isCollaborationsUsed":true,"isTemplateAnswer":false,"inProgressClass":null},"terms":{"deleteAnswerQuestion":"Vill du ta bort svaret?","errorOccured":null,"noInternetConnection":null,"documentLoadingTitle":null},"controls":{"deleteAnswerButton":"ctl00_Content_DeleteAnswerButton","commentModule":"ctl00_Content_CommentModule_CommentModule","answerButton":null,"feedbackForError":null},"urls":{"deleteAnswerUrl":"/api/lo/128044405/195523565/answer/","createStudentTemplateController":"/api/lo/128044405/195523565/createStudentTemplate/","answerTemplateUrl":"~/StudentView.aspx?LearningObjectId=128044405\u0026LearningObjectInstanceId=195523565\u0026MobileBrowser=NotDefined\u0026UserId=56302339"}};
+            window.StudentViewSettings = settings;
+            var page = new Assignment.StudentView(settings);
+            
+        });
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var answerButton = document.getElementById('answerButton');
+            if (answerButton) {
+                answerButton.onclick = onAnswerButtonClick;
+            }
+        });
+
+        function onAnswerButtonClick(event) {
+            var answerButton = this;
+
+            var data = {
+                assignmentInstanceId: window.StudentViewSettings.data.assignmentInstanceId,
+                assignmentId: window.StudentViewSettings.data.assignmentId
+            };
+
+            var windowForDocument = newWindowForDocument();
+
+            fetch(window.StudentViewSettings.urls.createStudentTemplateController, {
+                body: JSON.stringify(data),
+                credentials: 'same-origin',
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'text/json; charset=utf-8',
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            }).then(function(response) {
+                if(response.ok) {
+                    return response.json();
+                }
+                throw response;
+            }).then(function(documentUrl) {
+                windowForDocument.location.href = documentUrl;
+                document.location.href = "StudentView.aspx?LearningObjectId=128044405&LearningObjectInstanceId=195523565&MobileBrowser=NotDefined&UserId=56302339";
+            }).catch(function(errorresponse) {
+                errorresponse.json().then(function(error) {
+                    $(answerButton).trigger(CCL.ButtonLoadingIndicator.eventRemoveLoadingIndicator);
+                    windowForDocument.showError(error.DisplayMessageToUser ? error.ErrorMessage : '');
+                });
+            });
+        }
+
+        function newWindowForDocument() {
+            var documentPopup = window.open("DocumentView.aspx?LearningObjectId=128044405&LearningObjectInstanceId=195523565&MobileBrowser=NotDefined&UserId=56302339", '_blank');
+            return documentPopup;
+        }
+    </script>
+
+
+    <script>
+        $(function () {
+            var settings = {"data":{"calculateMeasureKpiEvent":"CalculateMeasureKpi","cssClasses":{"criteriaDescriptionRow":"ccl-rubric-criteria-description-row","noPrint":"h-no-print","emptyState":"ccl-rubric-criteria-empty-state","feedbackTextEditorPanel":"as-feedback-editor-panel","fieldsetPrinting":"as-fieldset-printing"}},"controls":{"printHeader":"ctl00_PrintHeader"}};
+
+            new Assignment.Master(settings);
+        });
+    </script>
+
+<div id="jstree-marker" style="display: none;">»</div><div id="jstree-marker-line" style="display: none;"></div><div id="vakata-contextmenu"></div></body></html>
