@@ -38,7 +38,7 @@ main{
 }
 aside{
   height: 1300px;
-  width: 130px;
+  width: 145px;
   background-color: grey;
 
 
@@ -61,7 +61,7 @@ background-color: black;
 background-color: #d1e0e0;
 border: none;
 color: black;
-padding: 15px 32px;
+padding: 15px 33px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
